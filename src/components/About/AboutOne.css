@@ -1,0 +1,129 @@
+
+/* start sec-1 */
+.sec-1{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 0;
+}
+
+.sec-1 .image{
+    width: 80%;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .sec-1 .image{
+        margin-bottom: 40px;
+    }
+}
+
+.sec-1 .image::before{
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    top: -25px;
+    left: -25px;
+    z-index: -1;
+    background-color: #ffffff;
+    border-top: 10px solid var(--min-color);
+    border-left: 10px solid var(--min-color);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.sec-1 .image img{
+    width: 100%;
+}
+
+.sec-1 .text h2{
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.sec-1 .text p{
+    text-transform: capitalize;
+    margin: 24px 0;
+    color: #777;
+}   
+
+.sec-1 .text .div-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.sec-1 .text .div-center .img img{
+    width: 120px;
+}
+
+.sec-1 .text .div-center p{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.sec-1 .text .div-center .number h3{
+    color: var(--min-color);
+}
+
+.sec-1 .text .divs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.sec-1 .text  .divs div{
+    width: 30%;
+    height: 150px;
+    box-shadow: 0 0 5px #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 968px) {
+    .sec-1 .text  .divs div{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .sec-1 .text  .divs div{
+        width: 95%;
+    }
+    .sec-1 .text .div-center p{
+        display: none;
+    }
+}
+
+
+.sec-1 .text  .divs i{
+    font-size: 40px;
+    color: var(--min-color);
+    display: block;
+}
+
+.sec-1 .text  .divs span{
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+.sec-1 .text .divs div p{
+    text-transform: capitalize;
+    margin: 0;
+}
+/* end sec-1 */

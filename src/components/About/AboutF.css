@@ -1,0 +1,196 @@
+
+/* start sec-video */
+.sec-video{
+    width: 100%;
+    min-height: 80vh;
+    padding: 90px 0;
+}
+
+.sec-video .text{
+    text-align: end;
+    padding-right: 20px;
+}
+
+.sec-video .text span{
+    color: var(--min-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sec-video .text h3{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.sec-video .text h5{
+    text-transform: capitalize;
+    font-size: 22px;
+    color: #444;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.sec-video .text h5::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 2px;
+    background-color: var(--min-color);
+}
+
+.sec-video .text p{
+    margin: 25px 0;
+}
+
+.sec-video .text ul{
+    padding: 0;
+}
+
+.sec-video .text ul li{
+    list-style: none;
+    margin: 4px 0;
+}
+
+.sec-video .text ul li i{
+    margin-left: 10px;
+    color: var(--min-color);
+}
+
+.sec-video .text button{
+    width: 170px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--min-color);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 35px;
+}
+
+.sec-video .text button:hover{
+    background-color: #000;
+    transition: all .4s;
+}
+
+.sec-video .img{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    padding-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-video .img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    border: 15px solid var(--min-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sec-video .img .img-one{
+    width: 80%;
+    position: absolute;
+    top: 7%;
+    right: 0;
+    z-index: 1;
+    height: 70%;
+}
+
+.sec-video .img .img-tow{
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    height: 70%;
+
+}
+
+.sec-video .img .vedio-icon{
+    position: relative;
+    z-index: 4;
+    width: 70px;
+    height: 70px;
+    background-color: #dfdfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sec-video .img .vedio-icon::after{
+    content: "";
+    position: absolute;
+    width: 210%;
+    height: 210%;
+    border-radius: 50%;
+    background-color: rgba(199, 199, 199, 0.329);
+    z-index: -1;
+    animation: width-vedio-one 2s infinite linear;
+}
+.sec-video .img .vedio-icon::before{
+    content: "";
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    border-radius: 50%;
+    background-color: rgba(199, 199, 199, 0.329);
+    z-index: -1;
+    animation: width-vedio-tow 2.5s infinite linear;
+}
+
+@keyframes width-vedio-one{
+    0%{
+        width: 0%;
+        height: 0%;
+    }
+}
+@keyframes width-vedio-tow{
+    0%{
+        width: 0%;
+        height: 0%;
+    }
+}
+
+
+
+.sec-video .video{
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: rgba(24, 24, 24, 0.171);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.sec-video .video i{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 30px;
+    padding: 9px;
+    background-color: var(--min-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+.sec-video .img .vedio-icon i{
+    color: #000;
+    font-size: 19px;
+}
+
+/* end sec-video */ 

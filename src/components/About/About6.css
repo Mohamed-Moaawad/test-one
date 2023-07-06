@@ -1,0 +1,62 @@
+
+/* start sec-Clients */
+.clients{
+    width: 100%;
+    min-height: 50vh;
+    padding: 50px 0;
+}
+
+.clients .text .head{
+    position: relative;
+    padding: 5px 0;
+    margin: 25px 0;
+}
+
+.clients .text .head::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: var(--min-color);
+}
+
+.clients .text .head span{
+    color: var(--min-color);
+    text-transform: uppercase;
+
+}
+
+.clients .text .head h2{
+    font-weight: 700;
+}
+
+.clients .text button{
+    width: 175px;
+    height: 40px;
+    border: none;
+    border-radius: 35px;
+    background-color: var(--min-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all .4s;
+    margin-bottom: 50px;
+}
+
+.clients .text button:hover{
+    background-color: #161616;
+}
+
+.clients .img{
+    width: 100%;
+    height: 150px;
+    box-shadow: 0 0 15px #d5d5d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+/* end sec-Clients */

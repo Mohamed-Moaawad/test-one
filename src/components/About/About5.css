@@ -1,0 +1,189 @@
+
+/* srtart sec-team */
+.sec-team{
+    width: 100%;
+    min-height: 50vh;
+    padding: 90px 0;
+    background-color: #fff;
+}
+
+.sec-team .text .head{
+    padding: 15px 0;
+    position: relative;
+}
+
+.sec-team .text .head::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--min-color);
+}
+
+.sec-team .text .head span{
+    text-transform: uppercase;
+    color: var(--min-color);
+}
+
+.sec-team .text .head h3{
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 15px 0;
+    color: #000;
+}
+
+.sec-team .text .head h6{
+    text-transform: capitalize;
+    color: #444;
+}
+
+.sec-team .text p{
+    margin: 19px 0;
+    color: #777;
+    text-transform: capitalize;
+    font-size: 14px;
+    max-width: 80%;
+}
+
+.sec-team .text .icons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sec-team .text .icons .icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s;
+    margin-right: 15px;
+    box-shadow: 0 0 10px #dadada;
+    cursor: pointer;
+}
+
+.sec-team .text .icons .icon i{
+    font-size: 21px;
+    color: #444;
+    transition: all .4s;
+}
+
+.sec-team .text .icons .icon:hover{
+    background-color: var(--min-color);
+}
+.sec-team .text .icons .icon:hover i{
+    color: #fff;
+}
+
+
+.sec-team .swiper {
+    width: 100%;
+    padding: 0 50px;
+}
+
+.sec-team .swiper-slide{
+    width: 50%;
+    text-align: center;
+    padding: 12px 0;
+    margin-left: 12px;
+}
+
+
+.sec-team .cards{
+    width: 100%;
+    width: 100%;
+    box-shadow: 0 0 9px #c2c2c2;
+}
+
+.sec-team .cards .img{
+    width: 100%;
+    height: 310px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec-team .cards .img img{
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+}
+
+.sec-team .cards .img .icons{
+    width: 15%;
+    height: 100%;
+    background-color: var(--min-color);
+    position: absolute;
+    top: 0;
+    right: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.sec-team .cards .img:hover .icons{
+    right: 0;
+}
+
+.sec-team .cards .img:hover img{
+    transform: translateX(-30px);
+}
+
+.sec-team .cards .img .icons i{
+    color: #fff;
+    display: block;
+    font-size: 17px;
+    margin: 12px 0;
+    transition: all .4s;
+    padding: 3px;
+}
+
+.sec-team .cards .img .icons i:hover{
+    text-shadow: 5px 4px 3px #474747;
+}
+
+.sec-team .cards .info{
+    padding: 15px;
+    text-align: center;
+}
+.sec-team .cards .info h5{
+    text-transform: uppercase;
+    font-size: 19px;
+    margin: 4px 0;
+    font-weight: 700;
+}
+
+.sec-team .cards .info p{
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 14.5px;
+    color: #777;
+    font-weight: 400;
+}
+
+.sec-team .cards:hover h5{
+    color: var(--min-color);
+}
+
+@media screen and (max-width: 800px) {
+    .sec-team .cards .img{
+        height: 200px;
+    }
+    .sec-team .cards .info h5{
+        font-size: 1.7vw;
+    }
+    .sec-team .cards .info p{
+        font-size: 1vw;
+    }
+}
+
+/* end sec-team */

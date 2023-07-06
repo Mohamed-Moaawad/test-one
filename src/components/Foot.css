@@ -1,0 +1,128 @@
+footer{
+    width: 100%;
+    min-height: 55vh;
+    background-color: #111111;
+    padding: 150px 0;
+    position: relative;
+    margin-top: 100px;
+}
+
+footer p{
+    margin: 25px 0;
+    color: #cac8c8;
+}
+
+footer .icons{
+    display: flex;
+    align-items: center;
+}
+
+footer .icons .icon{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transition: all .4s;
+}
+
+footer .icons .icon i{
+    color: #fff;
+    transition: all .4s;
+}
+
+
+footer .icons .icon:hover{
+    background-color: var(--min-color);
+    border: none;
+}
+
+footer h4{
+    color: #fff;
+    margin-bottom: 15px;
+
+}
+
+
+footer .links ul{
+    padding: 0;
+}
+
+footer .links ul li{
+    list-style: none;
+    margin: 12px 0;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+footer .links ul li span{
+    color: #bfbfbf;
+}
+
+footer .links ul li i{
+    font-size: 14px;
+    visibility: hidden;
+    color: #bfbfbf;
+}
+
+footer .links ul li:hover span{
+    transition: all .5s;
+    margin-left: 5px;
+    color: var(--min-color);
+}
+footer .links ul li:hover i{
+    transition: all .5s;
+    visibility: visible;
+    color: var(--min-color);
+}
+
+footer .posts .img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .posts .img img{
+    width: 70px;
+    margin-right: 20px;
+}
+
+footer .posts .img .text p{
+    margin: 0;
+    color: #c8c5c5f9;
+
+}
+
+footer .posts .img .text span{
+    color: #fff;
+}
+
+.copyright{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #eeeeee69;
+    flex-wrap: wrap;
+}
+
+.copyright ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    color: #bfbfbf;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.copyright ul li:hover{
+    color: var(--min-color);
+}

@@ -1,0 +1,42 @@
+
+/* start contact */
+.contact{
+    width: 100%;
+    min-height: 30vh;
+    background: linear-gradient(rgba(19, 15, 226, 0.747), rgba(23, 35, 207, 0.842)),url(../../../public/images/call-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .text{
+    text-align: center;
+}
+
+.contact .text h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.contact .text p{
+    color: #ddd;
+    margin: 15px 0;
+}
+
+.contact .text button{
+    width: 170px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .4s;
+}
+
+.contact .text button:hover{
+    border: 1px solid #777;
+}
+/* end contact */

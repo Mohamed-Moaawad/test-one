@@ -1,0 +1,192 @@
+/* start services */
+.services{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.services .head{
+    text-align: center;
+    position: relative;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.services .head span{
+    color: var(--min-color);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.services .head h3{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+}
+
+.services .head p{
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+.services .head::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--min-color);
+}
+
+.services .card-services{
+    /* width: 33%; */
+    /* height: 250px; */
+    padding: 30px;
+    box-shadow: 0 0 15px #cececedc;
+    margin: 15px 0;
+}
+
+.services .card-services .icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    padding: 9px 0;
+}
+
+.services .card-services .icon i{
+    font-size: 45px;
+    color: var(--min-color);
+}
+
+.services .card-services .icon span{
+    font-size: 45px;
+    color: #e5e5e5;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.6;
+    font-weight: 600;
+}
+
+.services .card-services h5{
+    position: relative;
+    padding-bottom: 15px;
+    color: #000;
+}
+
+.services .card-services p{
+    color: #777;
+}
+
+.services .card-services h5::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    background-color: var(--min-color);
+
+}
+
+.services .card-services:hover{
+    transition: all .5s;
+    background-color: var(--min-color);
+}
+
+.services .card-services:hover i{
+    color: #ffffff;
+    transition: all .5s;
+}
+.services .card-services:hover h5{
+    color: #ffffff;
+    transition: all .5s;
+}
+.services .card-services:hover p{
+    color: #ffffff;
+    transition: all .5s;
+}
+.services .card-services:hover ::after{
+    background-color: #ffffff;
+    transition: all .5s;
+}
+/*****/
+.services .card-services.tow{
+    /* width: 33%; */
+    /* height: 250px; */
+    padding: 30px;
+    box-shadow: 0 0 15px #cececedc;
+    background-color: var(--min-color);
+}
+
+.services .card-services.tow .icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    padding: 9px 0;
+}
+
+.services .card-services.tow .icon i{
+    font-size: 45px;
+    color: #ffffff;
+}
+
+.services .card-services.tow .icon span{
+    font-size: 45px;
+    color: #bebebe;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.6;
+    font-weight: 600;
+}
+
+.services .card-services.tow h5{
+    position: relative;
+    padding-bottom: 15px;
+    color: #ffffff;
+}
+
+.services .card-services.tow p{
+    color: #ffffff;
+}
+
+.services .card-services.tow h5::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    background-color: #ffffff;
+
+}
+
+.services .card-services.tow:hover{
+    transition: all .5s;
+    background-color: #ffffff;
+}
+
+.services .card-services.tow:hover i{
+    color: var(--min-color);
+    transition: all .5s;
+}
+.services .card-services.tow:hover h5{
+    color: #161616;
+    transition: all .5s;
+}
+.services .card-services.tow:hover p{
+    color: #777;
+    transition: all .5s;
+}
+.services .card-services.tow:hover ::after{
+    background-color: var(--min-color);
+    transition: all .5s;
+}
+/* end services */

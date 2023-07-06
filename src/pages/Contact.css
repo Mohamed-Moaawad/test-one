@@ -1,0 +1,225 @@
+.contact-us{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+.contact-us .heading{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(#000000a4,#000000a4), url(../../public/images/faq.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us .heading div{
+    text-align: center;
+}
+
+.contact-us .heading div h2{
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.contact-us .heading div .links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.contact-us .heading div .links a:hover{
+    color: var(--min-color);
+}
+
+.contact-us .heading div .links i{
+    color: #fff;
+    margin: 0 12px;
+    font-size: 13px;
+}
+
+.contact-us .contact-form{
+    padding: 120px 0;
+}
+
+.contact-us .contact-form .title-box{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.contact-us .contact-form .title-box h5{
+    text-transform: capitalize;
+    font-size: 22px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+.contact-us .contact-form .title-box div{
+    display: flex;
+    align-items: center;
+}
+
+.contact-us .contact-form .title-box div .icon{
+    padding: 12px;
+    background-color: var(--min-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.contact-us .contact-form .title-box div .icon i{
+    color: #fff;
+    font-size: 18px;
+}
+
+.contact-us .contact-form .title-box div p{
+    margin: 0;
+}
+
+.contact-us .contact-form .form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-us .contact-form .form h3{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.contact-us .contact-form .form p{
+    color: #555;
+    max-width: 85%;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.contact-us .contact-form .form p::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: var(--min-color);
+    left: 0;
+    bottom: 0;
+}
+
+.contact-us .contact-form .form form{
+    width: 100%;
+
+}
+
+.contact-us .contact-form .form form input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 12px 0;
+    padding-left: 20px;
+}
+
+.contact-us .contact-form .form form div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-us .contact-form .form form div input{
+    width: 49%;
+}
+
+@media only screen and (max-width: 768px){
+    .contact-us .contact-form .form form div input{
+        width: 100%;
+    }
+}
+
+.contact-us .contact-form .form form textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.contact-us .contact-form .form form button{
+    border: none;
+    width: 180px;
+    height: 40px;
+    background-color: var(--min-color);
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: all .4s;
+}
+
+.contact-us .contact-form .form form button:hover{
+    background-color: #222;
+}
+
+.contact-us .iframe{
+    width: 100%;
+    height: 45vh;
+    margin: 30px 0;
+}
+
+.contact-us .iframe iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-us .news{
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-us .news h3{
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 32px;
+
+}
+
+.contact-us .news p{
+    max-width: 700px;
+    margin: 19px 0;
+}
+
+.contact-us .news form input{
+    width: 350px;
+    height: 45px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-right: 15px;
+}
+
+.contact-us .news form button{
+    width: 120px;
+    height: 45px;
+    border: none;
+    background-color: var(--min-color);
+    text-transform: uppercase;
+    border-radius: 30px;
+    color: #fff;
+    transition: all .4s;
+}
+
+.contact-us .news form button:hover{
+    background-color: #222;
+}
+
+

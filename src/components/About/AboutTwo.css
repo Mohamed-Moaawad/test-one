@@ -1,0 +1,140 @@
+
+/* start sec-skill */
+.sec-skill{
+    width: 100%;
+    min-height: 70vh;
+    background-image: url(../../../public/images/skill-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-skill .text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec-skill .text span{
+    text-transform: uppercase;
+    color: var(--min-color);
+}
+
+.sec-skill .text h2{
+    text-transform: capitalize;
+    margin: 15px 0;
+    color: #000;
+} 
+
+.sec-skill .text h6{
+    text-transform: capitalize;
+    color: #444;
+
+}
+
+.sec-skill .text hr{
+    width: 100px;
+    height: 2px;
+    background-color: var(--min-color);
+    text-align: left;
+}
+
+.sec-skill .text p{
+    font-size: 17px;
+    margin: 20px 0;
+    color: #777;
+}
+
+.sec-skill .text .level p{
+    color: #444;
+    font-weight: 600;
+    
+}
+
+.sec-skill .text .level .box{
+    width: 80%;
+    height: 10px;
+    background-color: #b1b1b196;
+    border-radius: 8px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.sec-skill .text .level .box div{
+    transition: all .9s;
+}
+
+.sec-skill .text .level .box div.one{
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    height: 100%;
+    background-color: var(--min-color);
+    border-radius: 10px;
+}
+.sec-skill .text .level .box span{
+    position: absolute;
+    top: -25px;
+    color: #4d4d4d;
+}
+.sec-skill .text .level .box span.spnOne{
+    left: 95%;
+    transform: translateX(-95%);
+}
+.sec-skill .text .level .box span.spnTow{
+    left: 80%;
+    transform: translateX(-80%);
+}
+.sec-skill .text .level .box div.tow{
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 100%;
+    background-color: var(--min-color);
+    border-radius: 10px;
+}
+
+.sec-skill .text button{
+    width: 170px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--min-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .4s;
+    margin-top: 45px;
+}
+
+.sec-skill .text button:hover{
+    background-color: #000;
+}
+
+.sec-skill .img img{
+    width: 100%;
+}
+
+@media screen and (max-width: 968px) {
+    .sec-skill .img{
+        margin-top: 50px;
+    }
+    
+}
+@media screen and (max-width: 991px) {
+    .sec-skill .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec-skill .img img{
+        width: 80%;
+        height: 80%;
+    }
+    
+}
+/* end sec-skill */

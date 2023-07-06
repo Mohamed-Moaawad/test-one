@@ -1,0 +1,905 @@
+:root{
+    --min-color: #3353EA;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+::selection{
+    background-color: var(--min-color);
+    color: #fff;
+}
+
+/* strat header */
+header{
+    width: 100%;
+    height: calc(95vh - 75px);
+    /* margin-top: 75px; */
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.69)), url(../../public/images/bg-construction1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+header .text{
+    width: 50%;
+}
+
+
+header .text h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+header .text p{
+    color: #ddd;
+}
+
+
+header .text .btn{
+    width: 55%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+
+header .text .btn div{
+    height: 45px;
+    margin-top: 25px;
+    transition: all .4s;
+    border-radius: 35px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+}
+
+header .text .btn a{
+    text-decoration: none;
+}
+
+header .text div.one{
+    width: 170px;
+    background-color: var(--min-color);
+    color: #fff;
+    position: relative;
+}
+
+header .text div.one:hover{
+    color: #444444;
+}
+
+header .text div.one::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 30%;
+    bottom: -15px;
+    transition: all .4s;
+
+}
+
+header .text div.one:hover::before{
+    width: 200%;
+    height: 200%;
+    bottom: 0;
+    left: 0;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+header .text div.tow{
+    width: 130px;
+    background-color: #fff;
+    color: #444;
+    position: relative;
+}
+
+header .text div.tow:hover{
+    color: #ffffff;
+}
+
+header .text div.tow::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--min-color);
+    left: 30%;
+    bottom: -15px;
+    transition: all .4s;
+
+}
+
+header .text div.tow:hover::before{
+    width: 200%;
+    height: 200%;
+    bottom: 0;
+    left: 0;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+/* end header */
+
+/* start studies */
+.studies{
+    width: 100%;
+    min-height: 90vh;
+    padding: 90px;
+    background-color: #F4F7FC;
+}
+
+.studies .head{
+    padding: 12px 0;
+    position: relative;
+}
+
+.studies .head::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: var(--min-color);
+    bottom: 0;
+    left: 0;
+}
+
+.studies .head span{
+    color: var(--min-color);
+    text-transform: uppercase;
+}
+
+.studies .head h3{
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #222;
+    font-size: 35px;
+}
+
+.studies .head p{
+    font-size: 19px;
+    color: #5c5c5c;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+/* .studies .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.studies .links ul{
+    padding: 0;
+}
+
+.studies .links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 30px;
+    background-color: var(--min-color);
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.studies .box-img{
+    width: 100%;
+    height: 300px;
+    background-color: aquamarine;
+    position: relative;
+    overflow: hidden;
+}
+
+.studies .box-img:hover img{
+    transition: all .5s;
+    transform: scale(1.2) rotate(5deg);
+}
+
+.studies .box-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.studies .box-img .box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #3352eabd;
+    opacity: 0;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.studies .box-img:hover .box{
+    opacity: 1;
+}
+
+.studies .box-img .box:hover h5{
+    top: 0;
+    transition: all .5s;
+}
+
+.studies .box-img .box:hover p{
+    left: 0;
+    transition: all .5s;
+}
+
+.studies .box-img .box h5{
+    color: var(--min-color);
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 4px 9px;
+    background-color: #fff;
+    margin: 12px 0;
+    position: relative;
+    top: -60px;
+}
+
+.studies .box-img .box p{
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 15px 0;
+    position: relative;
+    left: -500px;
+}
+
+.studies .box-img .box .icon-div{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 20px;
+}
+
+.studies .box-img .box .icon-div .icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all .3s;
+} 
+
+.studies .box-img .box .icon-div .icon:hover{
+    background-color: #fff;
+}
+
+.studies .box-img .box .icon-div .icon:hover i{
+    transition: all .3s;
+    color: var(--min-color);
+}
+
+.studies .box-img .box .icon-div .icon i{
+    color: #fff;
+    font-size: 18px;
+}
+/* end studies */
+
+  /* start sec-request  */
+.sec-request{
+    width: 100%;
+    min-height: 100vh;
+    padding: 90px 0;
+}
+
+.sec-request .text{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(../../public/images/testi-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec-request .text span{
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.sec-request .text h3{
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.sec-request .text .slid{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec-request .text .slid i{
+    font-size: 35px;
+    color: var(--min-color);
+    margin: 25px 0 15px;
+}
+
+.sec-request .text .slid p{
+    font-size: 14px;
+    color: #bebebe;
+    text-transform: capitalize;
+}
+
+
+
+.sec-request .text .slid .swiper {
+    width: 80%;
+    height: 100%;
+}
+
+.sec-request .text .slid .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec-request .text .slid div img{
+    width: 80px;
+    height: 8
+    0px;
+    border-radius: 50%;
+
+}
+
+.sec-request .text .slid div h6{
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.sec-request .text .slid div span{
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.sec-request .form{
+    background-color: var(--min-color);
+}
+
+.sec-request form{
+    width: 100%;
+    padding: 60px;
+    text-align: center;
+}
+
+.sec-request form span{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.sec-request form h2{
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 5px 0 35px;
+    color: #fff;
+}
+
+.sec-request form input{
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    margin: 17px 0;
+    border: none;
+}
+
+.sec-request form .box-inpt{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.sec-request form input.tow{
+    width: 48%;
+    /* margin-right: 32px; */
+
+}
+.sec-request form input.three{
+    width: 48%;
+}
+
+.sec-request form textarea{
+    width: 100%;
+    height: 110px;
+    padding: 15px;
+    margin-top: 9px;
+}
+
+.sec-request form button{
+    width: 170px;
+    height: 45px;
+    border-radius: 35px;
+    border: none;
+    margin-top: 45px;
+    transition: all .4s;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sec-request form button:hover{
+    background-color: #222;
+    color: #fff;
+}
+/* end sec-request  */
+/* start sec-table  */
+.sec-table{
+    width: 100%;
+    min-height: 100%;
+    background-color: #F4F7FC;
+    padding: 90px 0;
+}
+
+.sec-table .head{
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+.sec-table .head::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background-color: var(--min-color);
+}
+
+.sec-table .head span{
+    text-transform: uppercase;
+    color: var(--min-color);
+
+}
+
+.sec-table .head h2{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.sec-table .head p{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.sec-table .table-box{
+    width: 95%;
+    padding: 70px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 15px #dfdfdf;
+    margin-top: 19px;
+}
+
+.sec-table .table-box .title{
+    width: 100%;
+    border-bottom: 1px solid #77777750;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.sec-table .table-box .title h2{
+    font-weight: 700;
+    color: var(--min-color);
+    text-transform: capitalize;
+
+}
+
+.sec-table .table-box .title span{
+    font-weight: 800;
+    color: #464646;
+    font-size: 35px;
+}
+
+.sec-table .table-box span sup{
+    font-weight: 200;
+}
+
+.sec-table .table-box .title p{
+    text-transform: capitalize;
+    color: #212529;
+    font-weight: 500;
+}
+
+.sec-table .table-box ul{
+    padding: 0;
+    margin-top: 40px;
+}
+
+.sec-table .table-box ul li{
+    list-style: none;
+    margin: 15px 0;
+    color: #212529;
+}
+
+.sec-table .table-box button{
+    margin-top: 30px;
+    width: 170px;
+    height: 45px;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--min-color);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.sec-table .table-box button:hover{
+    background-color: #333333;
+    color: #fff;
+}
+
+.sec-table .table-box:hover{
+    background-color: var(--min-color);
+    transition: all 1s;
+}
+.sec-table .table-box:hover .title{
+    border-bottom-color: #fff;
+}
+.sec-table .table-box:hover li{
+    transition: all .4s;
+    color: #e6e6e6;
+}
+
+.sec-table .table-box:hover h3{
+    transition: all .4s;
+    color: #fff;
+}
+.sec-table .table-box:hover h2{
+    transition: all .4s;
+    color: #fff;
+}
+.sec-table .table-box:hover p{
+    transition: all .4s;
+    color: #dddddd;
+}
+.sec-table .table-box:hover button{
+    transition: all .4s;
+    color: #444;
+    background-color: #fff;
+}
+
+
+
+
+.sec-table .table-box2{
+    width: 95%;
+    padding: 70px;
+    text-align: center;
+    background-color: var(--min-color);
+    box-shadow: 0 0 15px #dfdfdf;
+    position: relative;
+    overflow: hidden;
+    margin-top: 19px;
+}
+
+.sec-table .table-box2 .title{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.sec-table .table-box2 .title h2{
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+
+}
+
+.sec-table .table-box2 .title h3{
+    font-weight: 800;
+    color: #ddd;
+    font-size: 35px;
+}
+
+.sec-table .table-box2 .title span{
+    text-transform: capitalize;
+    color: #bdbdbd;
+    font-weight: 500;
+}
+
+.sec-table .table-box2 ul{
+    padding: 0;
+    margin-top: 40px;
+}
+
+.sec-table .table-box2 ul li{
+    list-style: none;
+    margin: 15px 0;
+    color: #bdbdbd;
+}
+
+.sec-table .table-box2 button{
+    margin-top: 30px;
+    width: 170px;
+    height: 45px;
+    border: none;
+    border-radius: 40px;
+    background-color: #fff;
+    color: var(--min-color);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.sec-table .table-box2 button:hover{
+    background-color: #272727;
+    color: #fff;
+    transition: all .4s;
+}
+
+.sec-table .table-box2 .message{
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: 5%;
+    right: -9%;
+    padding: 4px;
+    transform: rotate(40deg);
+}
+
+.sec-table .table-box2 .message p{
+    color: var(--min-color);
+    text-transform: uppercase;
+    margin: 0;
+}
+/* end sec-table  */
+/* start sec-questio */
+.sec-questio{
+    width: 100%;
+    min-height: 70vh;
+    padding: 60px 0;
+}
+
+.sec-questio .img{
+
+}
+
+.sec-questio .img .head{
+    padding-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.sec-questio .img .head::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    left: 30px;
+    bottom: 0;
+    background-color: var(--min-color);
+}
+
+.sec-questio .img .head span{
+    text-transform: uppercase;
+    color: var(--min-color);
+}
+
+.sec-questio .img .head h3{
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #222;
+}
+
+.sec-questio .img .head p{
+    text-transform: capitalize;
+    color: #444;
+}
+
+.sec-questio .img .image{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-questio .img .image img{
+    width: 90%;
+}
+
+.sec-questio .questions{
+    width: 100%;
+    min-height: 0px;
+    overflow: hidden;
+}
+
+.sec-questio .questions .ques{
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #bdbdbd;
+    padding: 0 20px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 19px;
+    background-color: #F5F5F5;
+
+}
+.sec-questio .questions .ques p,i{
+    margin: 0;
+}
+
+.sec-questio .questions .ques div{
+    position: absolute;
+    top: 100%;
+    border: 1px solid #b1b1b16c;
+    width: 100%;
+    left: 0;
+    padding: 5px 9px;
+}
+
+.sec-questio .questions .ques div p{
+    color: #777;
+    font-size: 14px;
+}
+/* end sec-questio */
+
+/* start cards */
+.sec-cards{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F4F7FC;
+    padding: 50px 0;
+}
+
+.sec-cards .head{
+    text-align: center;
+    position: relative;
+    padding: 5px 0;
+    margin: 25px 0;
+}
+
+.sec-cards .head::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background-color: var(--min-color);
+}
+
+.sec-cards .head span{
+    color: var(--min-color);
+    text-transform: uppercase;
+
+}
+
+.sec-cards .head h2{
+    font-weight: 700;
+}
+
+.sec-cards .div-card{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px #c5c5c5;
+    margin: 19px 0;
+}
+
+.sec-cards .div-card:hover img{
+    transition: all .4s;
+    transform: scale(1.1);
+}
+.sec-cards .div-card:hover h3{
+    color: var(--min-color);
+    transition: all .5s;
+}
+
+.sec-cards .div-card .img{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.sec-cards .div-card .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.sec-cards .div-card .text{
+    padding: 20px;
+
+}
+
+.sec-cards .div-card .text h3{
+    font-size: 22px;
+    
+}
+
+.sec-cards .div-card .text p{
+    margin: 23px 0;
+    font-size: 15px;
+    color: #777;
+}
+
+.sec-cards .div-card .text .foot{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #d1d1d1;
+    padding: 9px 0;
+}
+
+.sec-cards .div-card .text .foot span{
+    
+}
+.sec-cards .div-card .text .foot span i{
+    color: var(--min-color);
+    margin-right: 4px;
+}
+/* end cards */
+
+.up-sec{
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--min-color);
+    border-radius: 2px;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 5;
+}
+
+.up-sec i{
+    color: #fff;
+    font-size: 22px;
+}
